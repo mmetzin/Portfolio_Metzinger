@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <meta charset="UTF-8" />
+        <meta charset="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Portfolio_Metzinger</title>
+        <link rel="icon" type="image/png" href="./images/logo_tiny.png">
+
+        <link rel="stylesheet" href="./css/show.css">
+        <link rel="script" href="./js/slider.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=close" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
+    </head>
+
+<body>
+    
+    <header>
+
+        <nav id="navbar">
+
+              <ul class="sidebar">
+                    
+                    <li onclick=hideSidebar()><a><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                    <li><a href="index.html#info">Info</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="https://drive.google.com/file/d/16j_-zyVMZQv1MfzS1pUELqCoqw-Atsor/view?usp=sharing" target="_blank">Lebenslauf</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/11PzV30rv97RO5eZl2FC2Sp9c-3Rg2LqD?usp=sharing" target="_blank">Zeugnisse</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+
+            </ul>
+
+            <ul id="menu">
+
+                <li class="nav-logo"><a href="index.html"><img src="./images/spiral-small.png" alt="logo"></a></li>
+                    
+                    
+                    <li class="hideOnMobile"><a href="index.html#info">Info</a></li>
+                    <li class="hideOnMobile"><a href="index.html#portfolio">Portfolio</a></li>
+                    <li class="hideOnMobile"><a href="https://drive.google.com/file/d/16j_-zyVMZQv1MfzS1pUELqCoqw-Atsor/view?usp=sharing" target="_blank">Lebenslauf</a></li>
+                    <li class="hideOnMobile"><a href="https://drive.google.com/drive/folders/11PzV30rv97RO5eZl2FC2Sp9c-3Rg2LqD?usp=sharing" target="_blank">Zeugnisse</a></li>
+                    <li class="hideOnMobile"><a href="#contact">Kontakt</a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><span class="material-symbols-outlined">
+                            menu
+                        </span></a></li>
+
+            </ul>
+
+        </nav> 
+
+    </header>
+
+    <main>
+
+    <section id="section-ui">
+
+        <div class="ui">
+
+            <h2>UI</h2> 
+            
+            <div onclick="closeFullImg()" class="full-img" id="fullImgBox">
+
+                <img src="images/UI/AppVerlieren/Mainpage.png" id="fullImg">
+
+                <span onclick="closeFullImg()"><svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span>
+
+            </div>
+
+            <div class="img-gallery">
+
+                <img src="images/UI/AppVerlieren/Mainpage.png" onclick="openFullImg(this.src)">
+                <img src="images/UI/AppVerlieren/AppPortfilio.png" onclick="openFullImg(this.src)">
+                <img src="images/UI/AppVerlieren/Gehirnchip.png" onclick="openFullImg(this.src)">
+                <img src="images/UI/AppVerlieren/KIHelperChat.png" onclick="openFullImg(this.src)">
+                <img src="images/UI/Map.png" onclick="openFullImg(this.src)">
+                <img src="images/UI/Eventliste.png" onclick="openFullImg(this.src)">
+                <img src="images/UI/ProfilMia.png" onclick="openFullImg(this.src)">
+                <img src="images/UI/WetterAppCut.png" onclick="openFullImg(this.src)">
+
+            </div>
+
+        </div>    
+
+    </section>  
+    
+    <section id="section-videos">
+
+        <div class="videos">
+
+            <h2>Videos</h2>  
+
+            <div class="img-gallery">
+
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/314fvKQ8AEg?si=vP-g6WXD51rHCDCb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/IJbA8VZ9XMU?si=4VTIFvMh6HUocOhg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SGYbSmyutLI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/UMXjJMCWgKc?si=y4QNhiq3xVVPZdF4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9DOnRU0bVN0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vH7XjtC5ifo?si=mG8f-wpvkFSsC2P8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/H4ZhDIa7Cu0?si=OuyCSeCDFF6lI2vR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Xa4J0qSbDE0?si=19nIVC56oUSGhvlK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_pDZAPiS3qs?si=YXCT3HNeOAcCby7D" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+        
+        </div>    
+
+    </section>
+
+      <section id="section-layout">
+
+        <div class="layout">
+
+            <h2>Layout</h2> 
+            
+            <img class="poster" src="/images/Layout/RetroNight6DigitaleAnzeige_2-resize.gif">
+            
+            <div onclick="closeFullImg()" class="full-img" id="fullImgBox">
+
+                <img src="images/Layout/Cyber.png" id="fullImg">
+
+                <span onclick="closeFullImg()"><svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span>
+
+            </div>
+
+            <div class="img-gallery">
+
+                <img src="images/Layout/Cyber.png" onclick="openFullImg(this.src)">
+                <img src="images/Layout/DigitalVisitenkarteCut.png" onclick="openFullImg(this.src)">
+                <img src="images/Layout/IMG_9835Edit4Cut.png" onclick="openFullImg(this.src)">
+                <img src="images/Layout/IMG_9841Edit5Cut.png" onclick="openFullImg(this.src)">
+                <img src="images/Layout/InterproFontCut.png" onclick="openFullImg(this.src)">
+                <img src="images/Layout/RavenFlyerCut.png" onclick="openFullImg(this.src)">
+                <img src="images/Layout/BarbequeFlyerCut.png" onclick="openFullImg(this.src)">
+                <img src="images/Layout/ZitatSidebyCut.png" onclick="openFullImg(this.src)">
+                <img src="images/Layout/HoddiesRavensCut.png" onclick="openFullImg(this.src)">
+                <img src="images/Layout/SidenudgeFontCut.png" onclick="openFullImg(this.src)">
+                <img src="images/Layout/DesignPrinzipienCut.png" onclick="openFullImg(this.src)">
+                <img src="images/Layout/PalfingerFlyerCut.png" onclick="openFullImg(this.src)">
+
+            </div>
+
+        </div>    
+
+    </section>
+
+     </section>
+
+      <section id="section-td">
+
+        <div class="td">
+
+            <h2>3D</h2>  
+
+            <div onclick="closeFullImg()" class="full-img" id="fullImgBox">
+
+                <img src="images/3D/BlenderRenderRigMultTest.png" id="fullImg">
+
+                <span onclick="closeFullImg()"><svg xmlns="http://www.w3.org/2000/svg" height="44px" viewBox="0 -960 960 960" width="44px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></span>
+
+            </div>
+
+            <div class="img-gallery">
+
+                <img src="images/3D/BlenderRenderRigMultTest.png" onclick="openFullImg(this.src)">
+                <img src="images/3D/BlenderRenderRigSingleTest.png" onclick="openFullImg(this.src)">
+                <img src="images/3D/TestRender14.png" onclick="openFullImg(this.src)">
+                <img src="images/3D/TestRender32Cut.png" onclick="openFullImg(this.src)">
+                <img src="images/3D/TestRender35.png" onclick="openFullImg(this.src)">
+                <img src="images/3D/Render.png" onclick="openFullImg(this.src)">
+                <img src="images/3D/UnityVRChatCut.png" onclick="openFullImg(this.src)">
+                <img src="images/3D/Room.png" onclick="openFullImg(this.src)">
+
+            </div>
+        
+        </div>    
+
+    </section>
+
+    <section class="contact" id="contact">
+
+        <div class="contact-mail">
+            
+            <h2>Kontakt</h2>
+
+            <button class="button-mail"><a href="mailto:patrick.metzinger4@gmail.com">patrick.metzinger4@gmail.com</a></button>  
+        
+        </div>
+
+    </section>
+
+    </main>
+
+    <footer>
+
+        <div class="links">
+
+            <a href="mailto:patrick.metzinger4@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="https://drive.google.com/file/d/16j_-zyVMZQv1MfzS1pUELqCoqw-Atsor/view?usp=sharing" target="_blank"><i class="fa-solid fa-file"></i></a>
+            <a href="https://drive.google.com/drive/folders/11PzV30rv97RO5eZl2FC2Sp9c-3Rg2LqD?usp=sharing" target="_blank"><i class="fa-solid fa-user-graduate"></i></a>
+
+        </div>    
+
+        <p>© 2025. Alle Rechte</p>
+
+    </footer>
+
+    <script>
+
+        function showSidebar(){
+
+            const sidebar = document.querySelector('.sidebar')
+
+            sidebar.style.display = 'flex'
+
+        }
+
+        function hideSidebar(){
+
+            const sidebar = document.querySelector('.sidebar')
+
+            sidebar.style.display = 'none'
+
+        }
+
+        var navbar =document.getElementById("navbar");
+        var menu =document.getElementById("menu");
+
+        window.onscroll = function(){
+
+            if(window.pageYOffset >= menu.offsetTop){
+
+                navbar.classList.add("sticky");
+
+            }
+            else{
+
+                navbar.classList.remove("sticky");
+
+            }
+        }
+
+        /* Img gallery */
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+
+        function openFullImg(pic){
+
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+
+        }
+
+        function closeFullImg(){
+
+            fullImgBox.style.display = "none";
+
+        }
+
+    </script>
+
+</body>
+
+</html>    

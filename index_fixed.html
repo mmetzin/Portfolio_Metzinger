@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="icon" type="image/png" href="./images/logo_tiny.png">
+  <link rel="stylesheet" href="./css/responsive-styled.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+              <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/>
+            </svg>
+          </a>
+        </li>
+        <li><a href="#info">Info</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+      <ul id="menu">
+        <li class="nav-logo"><img src="./images/spiral-small.png" alt="logo"></li>
+        <li class="hideOnMobile"><a href="#info">Info</a></li>
+        <li class="hideOnMobile"><a href="#portfolio">Portfolio</a></li>
+        <li class="hideOnMobile"><a href="#contact">Kontakt</a></li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"><span class="material-symbols-outlined">menu</span></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="header-info">
+      <div class="header-left">
+        <div class="header-text">
+          <h1>Name Nachname</h1>
+          <p>Bachelor of Arts Intermedia Design</p>
+        </div>
+        <div class="header-buttons">
+          <button class="button-contact"><a href="#contact">Kontakt</a></button>
+          <button class="button-portfolio"><a href="#portfolio">Portfolio<i class="fa-solid fa-angle-down"></i></a></button>
+        </div>
+      </div>
+      <div class="header-img">
+        <img src="./images/LogoNeonGifHD2Transparent2.gif" alt="logo">
+      </div>
+    </section>
+    <section id="info" class="info">
+      <div class="info-text">
+        <h2>Über mich</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque tempus eros, id pellentesque mi dictum et.</p>
+        <p>Donec vitae nibh mollis, placerat nisl condimentum, posuere ex. Nunc sodales diam et enim lobortis, ac interdum sem eleifend.Donec vitae nibh mollis, placerat nisl condimentum, posuere ex. Nunc sodales diam et enim lobortis, ac interdum sem eleifend.</p>
+      </div>
+      <div class="info-werdegang">
+        <h2>Werdegang</h2>
+        <ul>
+          <li class="icon-points">
+            <i class="fa-brands fa-youtube"></i>
+            <div>
+              <h3>Youtube</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque tempus eros.</p>
+            </div>
+          </li>
+          <li class="icon-points">
+            <i class="fa-solid fa-book-open"></i>
+            <div>
+              <h3>BBSGUT</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque tempus eros.</p>
+            </div>
+          </li>
+          <li class="icon-points">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <div>
+              <h3>Uni</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pellentesque tempus eros.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="portfolio" class="program">
+      <h2>Programm Vielfalt</h2>
+      <ul>
+        <li>Premiere</li>
+        <li>Premiere</li>
+        <li>Premiere</li>
+        <li>Premiere</li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'flex';
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector('.sidebar');
+      sidebar.style.display = 'none';
+    }
+    const navbar = document.getElementById("navbar");
+    const menu = document.getElementById("menu");
+    window.onscroll = function () {
+      if (window.pageYOffset >= menu.offsetTop) {
+        navbar.classList.add("sticky");
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  </script>
+</body>
+</html>
