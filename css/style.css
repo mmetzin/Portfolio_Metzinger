@@ -121,7 +121,7 @@ nav li:first-child{
 
 .header-info{
 
-    background-image: url("/images/Smoke2.1.png");
+    background-image: url("./images/Smoke2.1.png");
     padding: 5rem 5rem;
     display: flex;
     flex-wrap: wrap;
