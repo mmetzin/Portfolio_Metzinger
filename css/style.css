@@ -6,15 +6,6 @@
 
 }
 
-.noto-sans-font{
-  font-family: "Noto Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
-}
-
 body{
 
     min-height: 100vh;
@@ -22,6 +13,14 @@ body{
     background-color: #000;
     font-family: 'robot-font', sans-serif;
 
+}
+
+.noto-sans-font {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
 }
 
 nav{
@@ -57,7 +56,6 @@ nav ul{
 
     display: flex;
     align-items: center;
-    padding-left: auto;
 
 }
 
@@ -70,7 +68,7 @@ nav li{
 nav a{
 
     height: 100%;
-    padding: 0 30px;
+    padding: 0 1.5rem;
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -124,7 +122,7 @@ nav li:first-child{
 .header-info{
 
     background-image: url("/images/Smoke2.1.png");
-    padding: 80px;
+    padding: 5rem 5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
@@ -193,7 +191,7 @@ nav li:first-child{
 
 }
 
-.button-porfolio:hover{
+.button-portfolio:hover{
 
     color: #8d1812;
 
@@ -202,13 +200,14 @@ nav li:first-child{
 .fa-angle-down{
 
     color: #fff;
-    padding-left: 15px;
+    padding-left: 1rem;
 
 }
 
 .header-img{
 
-    padding-right: 16%;
+    flex: 1 1 200px;
+    padding-right: 5%;
     text-align: center;
 
 }
@@ -242,21 +241,21 @@ nav li:first-child{
 
 .info-text h2{
 
-    padding-bottom: 50px;
+    padding-bottom: 2rem;
 
 }
 
 .info-text p,
 .info-werdegang{
 
-    padding-bottom: 10px;
+    padding-bottom: 1rem;
 
 }
 
 .info-werdegang ul{
 
     list-style: none;
-    padding-top: 50px;
+    padding-top: 2rem;
 
 }
 
@@ -264,15 +263,15 @@ nav li:first-child{
 
     display: flex;
     align-items: center;
-    margin-bottom: 25px;
+    margin-bottom: 1.5rem;
 
 }
 
 .icon-points i{
 
     color: #8d1812;
-    font-size: 50px;
-    padding-right: 30px;
+    font-size: 2.5rem;
+    padding-right: 1.5rem;
 
 }
 .program{
@@ -322,8 +321,9 @@ nav li:first-child{
 
 .cards img{
 
-    width: 550px;
-    height: 350px;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
     display: block;
 
 }
